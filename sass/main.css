@@ -1,0 +1,405 @@
+#form_login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Merriweather", serif;
+}
+#form_login .label_login {
+  margin-top: 14px;
+  width: 100%;
+  height: 39px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#form_login .label_login .fa-solid {
+  font-size: 15px;
+}
+#form_login .link_login {
+  margin-top: 9px;
+  width: 100%;
+  height: 23px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#form_login a {
+  font-weight: 400;
+}
+#form_login .forgotp {
+  font-size: 13px;
+}
+#form_login .buttoni {
+  width: 70px;
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/Pacifico.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.layout {
+  background-color: rgb(240, 240, 240);
+  display: grid;
+  grid-template-columns: 14% auto 10%;
+  overflow: hidden;
+}
+
+header .flexHead {
+  width: 100%;
+  height: auto;
+  background-color: #8FC1D4;
+  justify-content: space-between;
+  position: relative;
+}
+header .navSpace {
+  margin-right: 50em;
+  padding-right: 12px;
+  height: 100vh;
+  background-color: #8FC1D4;
+  /* box-shadow: 1px;
+  box-shadow: inset 5px 5px 34px 22px rgb(0 0 0 / 26%); */
+  transition: 0.5s cubic-bezier(0.47, 0.35, 1, 0.71);
+}
+header .navSpace:hover {
+  margin-right: -77px;
+}
+header .navSpace .nav_menu {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: -webkit-clip-path 0.4s ease-in-out;
+  transition: clip-path 0.4s ease-in-out;
+  transition: clip-path 0.4s ease-in-out, -webkit-clip-path 0.4s ease-in-out;
+}
+header .navSpace .nav_menu .mec {
+  font-family: "Merriweather", serif;
+  margin-inline: 10px;
+  width: 100%;
+  display: inline;
+  text-decoration: none;
+  color: white;
+  -webkit-padding-end: auto;
+          padding-inline-end: auto;
+  padding: 5px;
+  margin-top: 5px;
+}
+header .navSpace .nav_menu .mec:hover {
+  color: #C68B59;
+  width: 100%;
+  border-radius: 3px;
+}
+header .navSpace input:checked ~ .nav_menu {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .navSpace #controlador {
+  display: none;
+}
+header .navSpace #controlador img.Hamb {
+  transition: 0.5s ease-in-out;
+  width: 50px;
+}
+
+img.Hamb {
+  width: 50px;
+  top: 5px;
+  margin-top: 262px;
+  margin-left: 183px;
+  position: fixed;
+}
+
+.boxs {
+  width: 100px;
+  height: 100px;
+}
+
+/* contenido */
+.header_back {
+  overflow: hidden;
+  z-index: 6;
+}
+.header_back .logoHeader .font_Logo {
+  width: 100%;
+  height: 100%;
+}
+
+#section1 {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+#section1 #grid_cont {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  position: relative;
+}
+#section1 #grid_cont .grid_1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#section1 #grid_cont .grid_1 .texto_principal {
+  height: 45px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+#section1 #grid_cont .grid_1 .texto_principal .qu {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  width: 194px;
+  background: #241102;
+  color: rgba(0, 0, 0, 0.1490196078);
+  text-shadow: rgb(86, 40, 12) -1px 1px 0px;
+  -webkit-background-clip: text;
+}
+#section1 #grid_cont .grid_1 .texto_principal .words {
+  overflow: hidden;
+  height: 45px;
+  width: 179px;
+  padding-top: 4px;
+}
+#section1 #grid_cont .grid_1 .texto_principal span {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  width: 212px;
+  padding-left: 2px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  animation: spin_words 6s infinite;
+  height: 51px;
+  background: #241102;
+  color: rgba(0, 0, 0, 0.1490196078);
+  text-shadow: rgb(86, 40, 12) -1px 1px 0px;
+  -webkit-background-clip: text;
+}
+#section1 #grid_cont .grid_1 .btn_main {
+  width: auto;
+  height: auto;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  z-index: 5;
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  padding: 8px;
+  border-radius: 4px;
+  background: rgba(36, 17, 2, 0.5215686275);
+  color: rgba(0, 0, 0, 0.1490196078);
+  text-shadow: #c68b59 -1px 1px 0px;
+}
+#section1 #grid_cont .grid_1 .btn_main:hover {
+  background: #241102;
+}
+#section1 .coffe_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 5;
+}
+#section1 .coffe_container .coffe {
+  width: 350px;
+  height: 350px;
+  animation: coffe_anim 2s cubic-bezier(0.58, 0.35, 0.55, 0.96);
+  animation-iteration-count: 1;
+}
+
+#background_Set {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#background_Grade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+  z-index: 5;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  /* position: absolute; */
+}
+
+/* INDEX- CONTENIDO- ANIMACIONES */
+@keyframes spin_words {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+/* coffe anim */
+@keyframes coffe_anim {
+  0% {
+    transform: translateX(421px) rotate(220deg);
+  }
+  25% {
+    transform: translateX(221px) rotate(120deg);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.moddalcontainer {
+  z-index: 7;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: space-around;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.moddalcontainer .modal {
+  background-color: rgb(255, 255, 255);
+  z-index: 8;
+  display: grid;
+  grid-template-rows: min-content; /* espacio minimo que toma la cabecera (1 row)  */
+  position: fixed;
+  top: 5%;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  justify-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+.moddalcontainer .modal .cabecera {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+}
+.moddalcontainer .modal .cabecera h2 {
+  font-family: "Merriweather";
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.moddalcontainer .modal .cabecera .bottonclose {
+  width: 40px;
+  height: 40px;
+  color: blue;
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+  border-radius: 50%;
+  align-items: center;
+}
+.moddalcontainer .modal .menu_grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+.moddalcontainer .modal .menu_grid .cafe_ {
+  width: 160px;
+  height: 128px;
+  background-color: aqua;
+  display: flex;
+  position: relative;
+}
+.moddalcontainer .modal .menu_grid .cafe_ .content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.moddalcontainer .modal .menu_grid .cafe_ .content #bk_img {
+  width: 170px;
+  height: 131px;
+  display: flex;
+  position: absolute;
+}
+.moddalcontainer .modal .menu_grid .cafe_ .content #coffe_name {
+  position: relative;
+  color: #34b3e4;
+  border-radius: 50px;
+  border-radius: 50px;
+  text-shadow: 1px 1px 1px #858282;
+  font-family: "Merriweather";
+  font-weight: bold;
+  font-size: 20px;
+}
+.moddalcontainer .modal .menu_grid .cafe_ .tag_coffe {
+  opacity: 0%;
+  display: flex;
+  position: te;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  background: rgb(2, 0, 36);
+}
+
+.tag_coffe:hover {
+  opacity: 80% !important;
+}
+
+.show {
+  pointer-events: auto;
+  display: flex;
+}/*# sourceMappingURL=main.css.map */

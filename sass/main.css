@@ -369,8 +369,8 @@ img.Hamb {
   justify-content: center;
 }
 .moddalcontainer .modal .menu_grid .cafe_ .content #bk_img {
-  width: 170px;
-  height: 131px;
+  width: 100%;
+  height: 100%;
   display: flex;
   position: absolute;
 }
@@ -402,4 +402,76 @@ img.Hamb {
 .show {
   pointer-events: auto;
   display: flex;
+}
+
+/* pc version */
+/* @media screen and (min-width: 1024px){
+    #section1{
+        #grid_cont{
+            display: grid;
+            grid-template-columns: 100%;
+        }
+    }
+} */
+/* tablet version */
+@media screen and (max-width: 768px) {
+  #section1 #grid_cont {
+    grid-template-columns: 100%;
+  }
+}
+/* phone version */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #grid_cont {
+    grid-template-columns: 100% !important;
+  }
+  .layout {
+    display: flex;
+  }
+  header .navSpace {
+    margin-right: 0px;
+    display: none;
+  }
+  header .flexHead {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .flexHead #menu {
+    width: 30px;
+    height: 30px;
+    font-size: 3rem;
+  }
+  header .navSpace {
+    margin-right: 0;
+    width: 100%;
+    height: 117px;
+  }
+  .header_back {
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
+  .header_back .logoHeader .font_Logo {
+    width: 200px;
+    height: 100%;
+  }
+  #section1 .coffe_container {
+    margin-top: -200px;
+  }
+  /* Section 1 */
+  .moddalcontainer .modal {
+    height: 90%;
+  }
+  .moddalcontainer .modal .menu_grid {
+    grid-template-columns: repeat(2, 1fr);
+    overflow: scroll;
+  }
+  .moddalcontainer .modal .menu_grid .cafe_ {
+    width: 350px;
+    height: 350px;
+  }
+  .moddalcontainer .modal .cabecera h2 {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
